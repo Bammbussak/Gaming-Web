@@ -52,37 +52,43 @@ body {
     overflow-x: hidden;
 }
 
-    header{
-        width:auto;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        top: 0;
-    }
+    header {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+}
 
-    header button{
-        background-color: var(--btn-bg-color);
-        color: var(--btn-text-color);
-        border: none;
-        border-radius: var(--radius);
-        padding: 10px 20px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: var(--text-base-size);
-        transition: 0.3s ease-in-out;
-    }
+header button {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--text-base-size);
+    transition: 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+header button svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
 
     header button:hover{
         background-color: var(--btn-text-color);
         color: var(--btn-bg-color);
-    }
-
-    header button svg{
-        width: 30px;
     }
 
     .hero{
